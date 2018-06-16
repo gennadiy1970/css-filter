@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="./css/common.css">
+
+</head>
+<body>
+    <div class="wrapper">
+            <h2>Filter</h2>
+            <p>Свойство filter позволяет применять к элементу графические эффекты</p>
+            <div class="image">
+                <img src="http://pipsum.com/800x500.jpg" alt="image" width="400" style="float: right;">
+            </div>
+            <ul class="list">
+                <li><b data-filter="none">filter: <kbd data-filter="none">none</kbd></b> <span class="comment">размытие</span> </li>
+                <li><b data-filter="blur(5px)">filter: <kbd data-filter="blur(5px)">blur(5px)</kbd></b> <span class="comment">размытие</span> </li>
+                <li><b data-filter="brightness(0.5)">filter: <kbd data-filter="brightness(0.5)">brightness(0.5)</kbd></b> <span class="comment">яркость</span> </li>
+                <li><b data-filter="contrast(50%)">filter: <kbd data-filter="contrast(50%)">contrast(50%)</kbd></b> <span class="comment">контрастность</span> </li>
+                <li><b data-filter="grayscale(50%)">filter: <kbd data-filter="grayscale(50%)">grayscale(50%)</kbd></b> <span class="comment">оттенки серого</span> </li>
+                <li><b data-filter="drop-shadow(5px 5px 5px red)">filter: <kbd data-filter="drop-shadow(5px 5px 5px red)">drop-shadow(5px 5px 5px red)</kbd></b> <span class="comment">тень</span> <span class="comment">размытие</span> </li>
+                <li><b data-filter="hue-rotate(50deg)">filter: <kbd data-filter="hue-rotate(50deg)">hue-rotate(50deg)</kbd></b> <span class="comment">изменение цвета в круге 360 градусов</span> </li>
+                <li><b data-filter="invert(100%)">filter: <kbd data-filter="invert(100%)">invert(100%)</kbd></b> <span class="comment">инвертирование</span> </li>
+                <li><b data-filter="opacity(50%)">filter: <kbd data-filter="opacity(50%)">opacity(50%)</kbd></b> <span class="comment">прозрачность</span> </li>
+                <li><b data-filter="saturate(50%)">filter: <kbd data-filter="saturate(50%)">saturate(50%)</kbd></b> <span class="comment">насыщенность</span> </li>
+                <li><b data-filter="sepia(50%)">filter: <kbd data-filter="sepia(50%)">sepia(50%)</kbd></b> <span class="comment">сепия</span> </li>
+            </ul>
+            <h4>Комбинирование фильтров</h4>
+            <pre><kbd class="combi" data-filter="blur(2px) drop-shadow(5px 5px 5px red)">filter: blur(2px) drop-shadow(5px 5px 5px red);</kbd></pre>
+            <h4>Еще <a href="https://codepen.io/GoIT-fe/pen/RZYGbE">пример</a></h4>
+        </div>
+        <script src="./js/app.js"></script>
+</body>
+</html>
