@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Filter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h2>Filter</h2>
+        <div class="df">
+            <h4>name: <span class="name"></span></h4>
+            <h4>value:  <span class="value">0</span> </h4>
+            <button class="reset">Reset</button>
+        </div>
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;filter: <span class="red">grayscale</span> ||
+          <span class="red">blur</span> ||
+          <span class="red">brightness</span> ||
+          <span class="red">contrast</span> ||
+          <span class="red">hue-rotate</span> ||
+          <span class="red">invert</span> || <span class="red">opacity</span> ||
+          <span class="red">saturate</span> || <span class="red">sepia</span>
+        </p>
+      </div>
+      <div class="controls">
+        <label for="spacing"
+          >grayscale:
+          <input
+            type="range"
+            name="grayscale"
+            min="0"
+            max="100"
+            value="0"
+            data-default="0"
+            step="10"
+            data-sizing="%"
+          />
+        </label>
+        <label
+          >blur:
+          <input
+            type="range"
+            name="blur"
+            min="0"
+            max="25"
+            value="0"
+            data-default="0"
+            data-sizing="px"
+          />
+        </label>
+        <label
+          >brightness:
+          <input
+            type="range"
+            name="brightness"
+            min="0"
+            max="100"
+            value="100"
+            data-default="100"
+            data-sizing="%"
+          />
+        </label>
+        <label
+          >contrast:
+          <input
+            type="range"
+            name="contrast"
+            min="0"
+            max="100"
+            value="100"
+            data-default="100"
+            data-sizing="%"
+          />
+        </label>
+        <label
+          >hue-rotate:
+          <input
+            type="range"
+            name="hue-rotate"
+            min="0"
+            max="360"
+            value="0"
+            data-default="0"
+            data-sizing="deg"
+          />
+        </label>
+        <label
+          >invert:
+          <input
+            type="range"
+            name="invert"
+            min="0"
+            max="100"
+            value="0"
+            data-default="0"
+            data-sizing="%"
+          />
+        </label>
+        <label
+          >opacity:
+          <input
+            type="range"
+            name="opacity"
+            min="0"
+            max="100"
+            value="100"
+            data-default="100"
+            data-sizing="%"
+          />
+        </label>
+        <label
+          >saturate:
+          <input
+            type="range"
+            name="saturate"
+            min="0"
+            max="100"
+            value="100"
+            data-default="100"
+            data-sizing="%"
+          />
+        </label>
+        <label
+          >sepia:
+          <input
+            type="range"
+            name="sepia"
+            min="0"
+            max="100"
+            value="0"
+            data-default="0"
+            data-sizing="%"
+          />
+        </label>
+      </div>
+      <div class="image">
+        <img src="http://pipsum.com/800x500.jpg" alt="image" width="400" />
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

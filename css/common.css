@@ -69,7 +69,16 @@ kbd {
     box-shadow: 0 0 5px 4px hsla(0, 100%, 100%, 0.5);
   }
 
-
+/* 
 #homer {
     filter: blur(5px)l
+} */
+
+ul {
+    list-style: none;
+}
+
+li b,
+pre  {
+    cursor: pointer;
 }
